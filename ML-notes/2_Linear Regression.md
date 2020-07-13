@@ -1,4 +1,4 @@
-# Regression：Case Study
+# 2. Regression
 
 > **回归**-案例研究
 
