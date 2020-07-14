@@ -1,4 +1,3 @@
-# 3. Regression Demo
 
 {
 "cells": [
