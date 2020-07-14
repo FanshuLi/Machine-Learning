@@ -1,4 +1,4 @@
-# 1.Data Science(数据科学)、AI(人工智能)、Machine Learning(机器学习)、 Deep Learning(深度学习)
+# 1.Data Science & AI & Machine Learning & Deep Learning
 
 * #### Artificial Intelligence
 
