@@ -1,4 +1,4 @@
-# 1.Data Science & AI & Machine Learning & Deep Learning
+## 1.Data Science & AI & Machine Learning & Deep Learning
 
 * #### Artificial Intelligence
 
@@ -17,7 +17,7 @@
   常見的Deep Learning應用範圍有： Speech Recognition(語音辨識)、Image Recognition(圖像辨識)、Language Understanding(語言理解)、Language Generation(語言生成)等等。常用的library 包括 Tensorflow、Pytorch、Keras.
   Alpha Go的理論是基於數據科學中的機器學習中的深度學習中的强化學習一科
 
-# 2. Regression
+## 2. Regression
 
 * 找一个model （function set）：
 
@@ -44,7 +44,7 @@
 * 如何处理ovefitting：用regularization来找有效的feature
 
 
-# 3. Error 
+## 3. Error 
 
 * Error Source:  Bias & Variance
   Bias: E[f*]=f bar: 简单的model 会有小的variance，复杂的model会有较大的variance [simpler model is less influenced bby the sampled data ]
@@ -62,7 +62,7 @@
   trade-off between bias & variance
   Testing Model的：Cross Validation; N-fold Cross Validation 
 
-# 4. Gradient Descent
+## 4. Gradient Descent
 
 * Learning Rate: 太小会走的很慢，太大会很难找到最低点。需要自动的方法找到合适的learning rate， 开始的时候learning rate较大，快接近最低点时，要把rate变小。
 
@@ -74,7 +74,7 @@
 
 * Feature Scaling: 做feature scaling可以增加效率，类似等高线图
 
-#### Types of Gradient Descent Algorithms (BGD、SGD & MBGD)
+### Types of Gradient Descent Algorithms (BGD、SGD & MBGD)
 
 Various variants of gradient descent are defined on the basis of how we use the data to calculate derivative of cost function in gradient descent. Depending upon the amount of data used, the time complexity and accuracy of the algorithms differs with each other.
 
