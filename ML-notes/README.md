@@ -99,14 +99,14 @@ Gaussian process: 什么是高斯过程？简单的说，就是一系列关于�
 
 * Step1: function set, if p>=0.5 output c1; else output c2, posterior probability，用sigmoid函数，结果介于0-1
 
-### Discriminative 判定模型 & Generative 生成模型：
+#### Discriminative 判定模型 & Generative 生成模型：
 
 监督学习方法又可分为生成方法和判别方法。所学到的模型分别称为生成模型和判别模型。      生成方法由数据学习联合概率分布，然后求出条件概率分布作为预测模型，即生成模型：这样的方法称为生成方法，是因为模型表示了给定输入X产生输出Y的生成关系。典型的生成模型有：朴素贝叶斯法、隐马尔科夫模型、混合高斯模型、AODE、Latent Dirichlet allocation（unsup）、Restricted Boltzmann Machine。
 
 判别方法由数据直接学习决策函数[公式]或者条件概率分布[公式]作为预测的模型，即判别模型。判别方法关心的是对给定的输入X，应该预测什么样的输出Y。典型的判别方法包括，kNN，感知机，决策树，逻辑回归，最大熵模型，SVM，提升方法，条件随机场，神经网络等。
 
 
-### 决策函数和条件概率分布
+#### 决策函数和条件概率分布
 
 决策函数Y=f(X)
 决策函数Y=f(X)：你输入一个X，它就输出一个Y，这个Y与一个阈值比较，根据比较结果判定X属于哪个类别。例如两类（w1和w2）分类问题，如果Y大于阈值，X就属于类w1，如果小于阈值就属于类w2。这样就得到了该X对应的类别了。
@@ -119,10 +119,11 @@ Gaussian process: 什么是高斯过程？简单的说，就是一系列关于�
 判别模型是发现各个结果之间的不同,不关心产生结果的过程
 
 * 优缺点
-generative model：有假设，受data影响小，对噪音可以忽视，
-discriminative model：没有任何假设，所以受data的影响大，function拆成2部分，可以来自不同的来源。
 
-Limitation of Logistic Regression: 4个点，对角线为一类，无法用regression划线
+  generative model：有假设，受data影响小，对噪音可以忽视，
+  discriminative model：没有任何假设，所以受data的影响大，function拆成2部分，可以来自不同的来源。
+
+* Limitation of Logistic Regression: 4个点，对角线为一类，无法用regression划线
 
 * 解决方式：1）Feature Transformation：不希望人工作，机器去找，用cascading logistic regression model
 
