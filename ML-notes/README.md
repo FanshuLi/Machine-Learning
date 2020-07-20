@@ -19,7 +19,7 @@
   常見的Deep Learning應用範圍有： Speech Recognition(語音辨識)、Image Recognition(圖像辨識)、Language Understanding(語言理解)、Language Generation(語言生成)等等。常用的library 包括 Tensorflow、Pytorch、Keras.
   Alpha Go的理論是基於數據科學中的機器學習中的深度學習中的强化學習一科
 
-## 2. Regression
+### 2. Regression
 
 * 找一个model （function set）：
 
@@ -46,7 +46,7 @@
 * 如何处理ovefitting：用regularization来找有效的feature
 
 
-## 3. Error 
+### 3. Error 
 
 * Error Source:  Bias & Variance
   Bias: E[f*]=f bar: 简单的model 会有小的variance，复杂的model会有较大的variance [simpler model is less influenced bby the sampled data ]
@@ -64,7 +64,7 @@
   trade-off between bias & variance
   Testing Model的：Cross Validation; N-fold Cross Validation 
 
-## 4. Gradient Descent
+### 4. Gradient Descent
 
 * Learning Rate: 太小会走的很慢，太大会很难找到最低点。需要自动的方法找到合适的learning rate， 开始的时候learning rate较大，快接近最低点时，要把rate变小。
 
@@ -86,7 +86,7 @@ Various variants of gradient descent are defined on the basis of how we use the 
 
 * Mini-Batch Gradient Descent (MBGD): 小批量梯度下降法是为了解决批梯度下降法的训练速度慢，以及随机梯度下降法的准确性综合而来，但是这里注意，不同问题的batch是不一样的，听师兄跟我说，我们nlp的parser训练部分batch一般就设置为10000，那么为什么是10000呢，我觉得这就和每一个问题中神经网络需要设置多少层，没有一个人能够准确答出，只能通过实验结果来进行超参数的调整。
 
-## 5. Classification
+### 5. Classification
 
 同理，我们用极大似然估计法Maximum Likelihood在高斯函数上的公式计算出class 2的两个参数，得到的最终结果如下：
 
@@ -97,7 +97,7 @@ Various variants of gradient descent are defined on the basis of how we use the 
 
 Gaussian process: 什么是高斯过程？简单的说，就是一系列关于连续域（时间或空间）的随机变量的联合，而且针对每一个时间或是空间点上的随机变量都是服从高斯分布的。
 
-## 6. Logistic Regression
+### 6. Logistic Regression
 
 * Step1: function set, if p>=0.5 output c1; else output c2, posterior probability，用sigmoid函数，结果介于0-1
 
@@ -129,7 +129,7 @@ Gaussian process: 什么是高斯过程？简单的说，就是一系列关于�
 
 * 解决方式：1）Feature Transformation：不希望人工作，机器去找，用cascading logistic regression model
 
-## 7. Deep Learning
+### 7. Deep Learning
 
 Function Set: Neural Network, weight & bias, 有不同的连接方式，fully connect feedfoward network; Output layer: feature extractor replacing feature engineering
 Goodness of function:  total loss, 用梯度下降，只是function复杂了而已
